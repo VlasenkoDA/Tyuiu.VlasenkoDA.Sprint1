@@ -17,7 +17,7 @@ namespace Tyuiu.VlasenkoDA.Sprint1.Task6.V4.Lib
             // Если совпадения найдены, возвращаем их через запятую
             if (matches.Count > 0)
             {
-                return string.Join(", ", matches.Cast<Match>().Select(m => m.Value));
+                return string.Join(" ", matches.Cast<Match>().Select(m => m.Value));
             }
             else
             {
